@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="Home.css">
+</head>
+<body onload="focusInputField()">
+
+<div class="card">
+    <h1>Calculator</h1>
+    <input class="screen" id="display" onkeydown="return isValidKey(event)" autofocus>
+
+    <ul>
+        <button class="btn" onclick="appendToDisplay('7')">7</button>
+        <button class="btn" onclick="appendToDisplay('8')">8</button>
+        <button class="btn" onclick="appendToDisplay('9')">9</button>
+        <button class="btn" onclick="appendToDisplay('/')">/</button>
+    </ul><br>
+    <ul>
+        <button class="btn" onclick="appendToDisplay('4')">4</button>
+        <button class="btn" onclick="appendToDisplay('5')">5</button>
+        <button class="btn" onclick="appendToDisplay('6')">6</button>
+        <button class="btn" onclick="appendToDisplay('*')">*</button>
+    </ul><br>
+    <ul>
+        <button class="btn" onclick="appendToDisplay('1')">1</button>
+        <button class="btn" onclick="appendToDisplay('2')">2</button>
+        <button class="btn" onclick="appendToDisplay('3')">3</button>
+        <button class="btn" onclick="appendToDisplay('-')">-</button>
+    </ul><br>
+    <ul>
+        <button class="btn" onclick="appendToDisplay('.')">.</button>
+        <button class="btn" onclick="appendToDisplay('0')">0</button>
+        <button class="btn" onclick="appendToDisplay('+')">+</button>
+        <button class="btn" onclick="appendToDisplay('%')">%</button>
+    </ul><br>
+    <ul>
+        <button class="btn" onclick="calculateResult()">Enter</button>
+        <button class="btn" onclick="clearDisplay()">Clear</button>
+    </ul>
+</div>
+
+<script src="Home.js"></script>
+</body>
+</html>

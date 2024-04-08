@@ -1,0 +1,22 @@
+body{
+    background-color: aquamarine;
+    overflow: hidden;
+}
+.card{
+margin: 10vw 40vw 40vw 40vw;
+background-color: darkseagreen;
+border-radius: 21px;
+text-align: center;
+padding: 1vw;
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+.screen{
+    text-align: center;
+    width: 100%;
+    padding: 10px 1px;
+    border-radius: 5px;
+}
+.btn{
+    padding: 10px 20px;
+    font-size: 20px;
+}
